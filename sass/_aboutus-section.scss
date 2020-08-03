@@ -1,0 +1,32 @@
+.aboutus-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutus-container {
+  padding-left: 31px;
+  padding-right: 31px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+
+    padding-left: 39px;
+    padding-right: 39px;
+    
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+
+    padding-left: 55px;
+    padding-right: 91px;
+  }
+
+}
