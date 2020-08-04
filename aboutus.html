@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
+
   <body>
     <section class="aboutus-section">
       <div class="aboutus-container">
         <div class="aboutus-photos-container">
           <picture>
-            <source srcset="./aboutus-1photo-desktopt1x270w.jpg 270w, ./aboutus-1photo-desktopt2x540w.jpg 540w" media="(min-width: 1280px)" />
+            <source srcset="./aboutus-1photo-desktopt1x270w.jpg 270w, ./aboutus-1photo-desktopt2x540w.jpg 540w" media="(min-width: 1200px)" />
             <source srcset="./aboutus-1photo-tablet1x330w.jpg 330w, ./aboutus-1photo-tablet2x660w.jpg 660w" media="(min-width: 768px)" />
             <img class="aboutus-image" src="./aboutus-1photo-tablet1x330w.jpg" alt="" />
           </picture>
 
           <picture>
-            <source srcset="./aboutus-2photo-desktopt1x270w.jpg 270w, ./aboutus-2photo-desktopt2x540w.jpg 540w" media="(min-width: 1280px)" />
+            <source srcset="./aboutus-2photo-desktopt1x270w.jpg 270w, ./aboutus-2photo-desktopt2x540w.jpg 540w" media="(min-width: 1200px)" />
             <source srcset="./aboutus-2photo-tablet1x330w.jpg 330w, ./aboutus-2photo-tablet2x660w.jpg 660w" media="(min-width: 768px)" />
             <img class="aboutus-image" src="./aboutus-2photo-tablet1x330w.jpg" alt="" />
           </picture>
         </div>
 
         <div class="aboutus-text-container">
-          <span>О нас</span>
+          <span class="aboutus-subtitle">О нас</span>
 
           <!-- теоретически где-то есть h1 уже -->
           <h2 class="aboutus-title">Лучший Барбершоп твоего города</h2>
@@ -38,9 +41,16 @@
             к нам приходит!
           </p>
 
-          <button class="aboutus button" type="button">Онлайн-запись</button>
+          <button class="aboutus-button button" type="button">Онлайн-запись</button>
         </div>
       </div>
     </section>
+
+    <!-- кнопка на тёмном фоне: -->
+    <div class="example-bacground">
+      <button class="prices-button button" type="button">Онлайн-запись</button>
+    </div>
+    <!--                        -->
+
   </body>
 </html>
